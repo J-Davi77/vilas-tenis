@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Veja o nosso catálogo dos melhores e mais baratos tênis da Praia Grande."
+        />
+        <title>Vila's Tênis</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header>
+            <a href="#" id="inicio"><h1 id="nome-loja">VILA'S TÊNIS</h1></a>
+
+            <nav id="site-nav">
+                <a href="#" class="nav-link">
+                    <img src="imgs/casual.svg" alt="Tênis casual" />
+                    <span>Casual</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="imgs/sports.svg" alt="Tênis esportivo" />
+                    <span>Esportivo</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="imgs/ajuda.svg" alt="Contato" />
+                    <span>Contato</span>
+                </a>
+            </nav>
+
+            <div id="header-btns">
+                <button id="search-btn">
+                    <img src="imgs/search.svg" alt="Pesquisa" />
+                </button>
+                <button id="favorite-btn">
+                    <img src="imgs/heart.svg" alt="Favoritos" />
+                </button>
+            </div>
+
+            <button id="menu-btn">
+                <img src="imgs/menu.svg" alt="Menu" />
+            </button>
+        </header>
+
+        <main>
+            <section id="hero">
+                <div id="hero-content">
+                    <h1 id="hero-title">SEU ESTILO COMEÇA NOS PÉS.</h1>
+                    <p class="hero-para">
+                        Performance, estilo e conforto em cada passo. Tênis
+                        selecionados para o dia a dia, treinos e lifestyle
+                        urbano, com design moderno e qualidade que acompanha seu
+                        ritmo.
+                    </p>
+                    <a href="#catalogo" id="hero-btn">Ver catálogo</a>
+                </div>
+            </section>
+
+            <section id="branding">
+                <div class="section-group animated">
+                    <h2 class="section-title">
+                        Por que escolher a nossa loja?
+                    </h2>
+                    <p class="section-subtitle">
+                        Uma loja de calçados feita pra você
+                    </p>
+                </div>
+
+                <div id="brand-elem-container">
+                    <div class="brand-elem animated">
+                        <img
+                            class="brand-icon"
+                            src="imgs/cash.svg"
+                            alt="Dinheiro"
+                        />
+                        <div class="brand-group">
+                            <h3 class="brand-title">
+                                Custo-benefício e qualidade
+                            </h3>
+                            <p class="brand-desc">
+                                É o famoso "bom e barato".
+                                <br />
+                                Aqui na Vila's Tênis você encontra calçados
+                                confiáveis e por um preço justo. Oferecemos o
+                                equilíbrio entre preço e qualidade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="brand-elem animated">
+                        <img
+                            class="brand-icon"
+                            src="imgs/loja.svg"
+                            alt="Loja"
+                        />
+                        <div class="brand-group">
+                            <h3 class="brand-title">
+                                Loja física em Praia Grande
+                            </h3>
+                            <div class="brand-desc">
+                                A nossa loja física está localizada em:
+                                <br />
+                                <div class="location">
+                                    R. Maria Martins Batista, 1059 - Vila Sonia,
+                                    Praia Grande - SP
+                                </div>
+                                <a
+                                    href="https://www.google.com.br/maps/place/R.+Maria+Martins+Batista,+1059+-+Vila+Sonia,+Praia+Grande+-+SP,+11722-050/@-24.0047961,-46.449405,17z/data=!4m6!3m5!1s0x94ce1e9b509b4b65:0x5e76039810667fbf!8m2!3d-24.0047962!4d-46.4445341!16s%2Fg%2F11fzw6v7d9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                                    id="maps-link"
+                                    target="_blank"
+                                    >Ver no Google Maps</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="brand-elem animated">
+                        <img
+                            class="brand-icon"
+                            src="imgs/service.svg"
+                            alt="Atendimento"
+                        />
+                        <div class="brand-group">
+                            <h3 class="brand-title">Ótimo atendimento</h3>
+                            <p class="brand-desc">
+                                Estamos quase sempre disponíveis para tirar
+                                dúvidas e garantir que você encontre o tênis
+                                ideal sem complicação. Fale com a gente na área
+                                de <a href="#" id="contatos-link">Contatos</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="brand-elem animated">
+                        <img
+                            class="brand-icon"
+                            src="imgs/apps.svg"
+                            alt="Variedade de estilos"
+                        />
+                        <div class="brand-group">
+                            <h3 class="brand-title">Variedade de estilos</h3>
+                            <p class="brand-desc">
+                                Nossa curadoria reúne modelos para diferentes
+                                estilos e ocasiões, do street ao esportivo,
+                                sempre unindo conforto, design e identidade em
+                                cada escolha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="catalogo">
+                <div class="section-group animated">
+                    <h2 class="section-title">Catálogo</h2>
+                    <p class="section-subtitle">
+                        Confira alguns dos nossos tênis à venda
+                    </p>
+                </div>
+
+                <div id="tenis-container">
+                    <!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis --><!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis --><!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis --><!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis --><!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis --><!-- Começo do tênis -->
+                    <div class="tenis-card animated">
+                        <div class="tenis-img-container">
+                            <img
+                                class="tenis-img"
+                                src="imgs/tenis/img-1.jpeg"
+                                alt="Nike Air Force 1"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="content">
+                            <div class="categorias">
+                                <span class="categoria">Unissex</span>
+                                <span class="categoria">Casual</span>
+                                <span class="categoria">Clássicos</span>
+                            </div>
+
+                            <div class="nome-container">
+                                <h3 class="nome">Nike Air Force 1</h3>
+                                <span class="colorway">Triple White</span>
+                            </div>
+
+                            <span class="preco"
+                                ><span class="moeda">R$</span>299,99</span
+                            >
+
+                            <div class="btn-container">
+                                <button class="detalhes-btn primary">
+                                    Ver detalhes
+                                </button>
+                                <button class="favorito-btn secondary">
+                                    Adicionar aos favoritos
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fim do tênis -->
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VILA'S TÊNIS</h2>
+                    <p class="footer-desc">
+                        Estilo, conforto e atitude em cada passo.
+                    </p>
+                </div>
+
+                <nav class="footer-links">
+                    <h3 class="footer-title">Links rápidos</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="casuais">Casual</a></li>
+                        <li><a href="esportivos">Esportivo</a></li>
+                        <li><a href="favoritos">Favoritos</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <p>
+                        <img
+                            src="imgs/local.svg"
+                            alt="localização"
+                            width="24"
+                        />
+                        R. Maria Martins Batista, 1059 - Vila Sonia
+                    </p>
+                    <p>
+                        <img
+                            src="imgs/whatsapp.svg"
+                            alt="Whatsapp"
+                            width="24"
+                        />
+                        (13) 97828-3454
+                    </p>
+                    <p>
+                        <img
+                            src="imgs/instagram.svg"
+                            alt="Instagram"
+                            width="24"
+                        />
+                        @vilastenis
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    Site desenvolvido com ❤️ por
+                    <a
+                        href="https://www.instagram.com/julio_davii_/"
+                        class="meu-insta"
+                        target="_blank"
+                    >
+                        <img
+                            src="imgs/instagram.svg"
+                            alt="Instagram"
+                            width="20"
+                        />
+                        @julio_davii
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

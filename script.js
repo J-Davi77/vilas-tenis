@@ -1,4 +1,56 @@
+// Animação de scroll
 const animatedElems = document.querySelectorAll(".animated");
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    },
+    {
+        threshold: 0.33,
+    }
+);
+
+animatedElems.forEach((elem) => observer.observe(elem));
+
+// Botões de favoritos
+const favoriteBtns = document.querySelectorAll(".favorito-btn");
+function favoritar(btn) {
+    if (btn.innerText === "Adicionar aos favoritos")
+        btn.innerText = "Remover dos favoritos";
+    else btn.innerText = "Adicionar aos favoritos"
+}
+favoriteBtns.forEach((btn) =>
+    btn.addEventListener("click", (e) => favoritar(e.currentTarget))
+);
+
+// Renderização dos tênis
+const tenisContainer = document.querySelector("#tenis-container");
+
+// Header responsivo com sidebar
+const menuBtn = document.querySelector("#menu-btn");
+const closeMenuBtn = document.querySelector("#sidebar-close-btn");
+const overlay = document.querySelector("#sidebar-overlay");
+
+function openMenu() {
+    overlay.classList.add("show");
+}
+
+function closeMenu() {
+    overlay.classList.remove("show");
+}
+
+menuBtn.addEventListener("click", openMenu);
+overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeMenu();
+});
+closeMenuBtn.addEventListener("click", closeMenu);
+//
+
 const modeloHtmlTenis = `<div class="tenis-card animated">
 <div class="tenis-img-container">
                             <img
@@ -38,38 +90,3 @@ const modeloHtmlTenis = `<div class="tenis-card animated">
                                     </div>
                                     </div>
                     </div>`;
-const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            } else {
-                entry.target.classList.remove("show");
-            }
-        });
-    },
-    {
-        threshold: 0.33,
-    }
-);
-
-animatedElems.forEach((elem) => observer.observe(elem));
-
-const tenisContainer = document.querySelector("#tenis-container");
-const menuBtn = document.querySelector("#menu-btn");
-const closeMenuBtn = document.querySelector("#sidebar-close-btn");
-const overlay = document.querySelector("#sidebar-overlay");
-
-function openMenu() {
-    overlay.classList.add("show");
-}
-
-function closeMenu() {
-    overlay.classList.remove("show");
-}
-
-menuBtn.addEventListener("click", openMenu);
-overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) closeMenu();
-});
-closeMenuBtn.addEventListener('click', closeMenu);

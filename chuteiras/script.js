@@ -1,4 +1,4 @@
-import { tenisArr } from "./data-tenis.js";
+import { tenisArr } from "../data-tenis.js";
 // Renderização dos tênis
 const formataPreco = (num) =>
     num.toLocaleString("pt-BR", {
@@ -15,7 +15,7 @@ function renderTenis(arr) {
         <div class="tenis-img-container">
         <img
                                 class="tenis-img"
-                                src="imgs/tenis/img-${tenis.id}.jpeg"
+                                src="../imgs/tenis/img-${tenis.id}.jpeg"
                                 alt="${tenis.nome}"
                                 loading="lazy"
                                 />
@@ -54,7 +54,8 @@ function renderTenis(arr) {
         tenisContainer.insertAdjacentHTML("beforeend", modeloHtmlTenis);
     });
 }
-renderTenis(tenisArr);
+const casuais = tenisArr.filter(t => t.categorias.includes("Casual"));
+renderTenis(casuais);
 
 // Animação de scroll
 const animatedElems = document.querySelectorAll(".animated");
@@ -109,7 +110,7 @@ function verDetalhes(id) {
 
     detalhesOverlay.querySelector(
         "#detalhes-img-tenis"
-    ).src = `imgs/tenis/img-${id}.jpeg`;
+    ).src = `../imgs/tenis/img-${id}.jpeg`;
 
     detalhesOverlay.querySelector("#detalhes-categorias").innerText = tenis.categorias.join(" / ")
 

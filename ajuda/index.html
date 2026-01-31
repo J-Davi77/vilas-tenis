@@ -1,11 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Veja o nosso catálogo dos melhores e mais baratos tênis da Praia Grande."
+        />
+        <title>Vila's Tênis</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" type="module" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="sidebar-overlay">
+            <div id="sidebar">
+                <button id="sidebar-close-btn">
+                    <img src="../imgs/close.svg" alt="Botão de fechar" />
+                </button>
+                <h2 id="nav-title">Navegação</h2>
+                <nav id="sidebar-nav">
+                    <a href="casuais" class="sidebar-link">
+                        Casual
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/casual.svg"
+                            alt="Tênis casual"
+                        />
+                    </a>
+                    <a href="esportivos" class="sidebar-link">
+                        Esportivo
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/sports.svg"
+                            alt="Tênis esportivo"
+                        />
+                    </a>
+                    <a href="chuteiras" class="sidebar-link">
+                        Chuteira
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/chuteira.svg"
+                            alt="Chuteira"
+                        />
+                    </a>
+                    <a href="ajuda" class="sidebar-link">
+                        Ajuda
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/ajuda.svg"
+                            alt="Símbolo de ajuda"
+                        />
+                    </a>
+                </nav>
+
+                <div id="nome-loja-sidebar">
+                    <h1>VILA'S TÊNIS</h1>
+                    <a
+                        href="https://www.instagram.com/vilastenis"
+                        target="_blank"
+                        class="insta-loja"
+                        >@vilastenis</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <a href="#" id="inicio"><h1 id="nome-loja">VILA'S TÊNIS</h1></a>
+
+            <nav id="site-nav">
+                <a href="casuais/" class="nav-link">
+                    <img src="../imgs/casual.svg" alt="Tênis casual" />
+                    <span>Casual</span>
+                </a>
+                <a href="esportivos/" class="nav-link">
+                    <img src="../imgs/sports.svg" alt="Tênis esportivo" />
+                    <span>Esportivo</span>
+                </a>
+                <a href="chuteiras" class="nav-link">
+                    <img src="../imgs/chuteira.svg" alt="Chuteira" />
+                    <span>Chuteira</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <img src="../imgs/ajuda.svg" alt="Contato" />
+                    <span>Ajuda</span>
+                </a>
+            </nav>
+            <button id="menu-btn">
+                <img src="../imgs/menu.svg" alt="Menu" />
+            </button>
+        </header>
+
+        <main>
+            <section id="ajuda">
+                <div class="section-group animated">
+                    <h2 class="section-title">Página de Ajuda</h2>
+                    <p class="section-subtitle">
+                        Estamos aqui para atender a todas as suas dúvidas.
+                    </p>
+                </div>
+
+                <div id="content">
+                    <div id="area-contato" class="content-section">
+                        <div id="contact-options">
+                            <div class="option">
+                                <h2 class="option-name">Whatsapp</h2>
+                                <h3 class="option-contact"><a href="">(13) 97828-3454</a></h3>
+                                <p class="option-desc">
+                                    Tire suas dúvidas sobre a loja e produtos pelo
+                                    Whatsapp.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="faq" class="content-section"></div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VILA'S TÊNIS</h2>
+                    <p class="footer-desc">Seu estilo começa nos pés.</p>
+                </div>
+
+                <nav class="footer-links">
+                    <h3 class="footer-title">Links rápidos</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#catalogo">Catálogo Inicial</a></li>
+                        <li><a href="casuais">Casual</a></li>
+                        <li><a href="esportivos">Esportivo</a></li>
+                        <li><a href="chuteiras">Chuteiras</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <p>
+                        <img
+                            src="../imgs/local.svg"
+                            alt="localização"
+                            width="24"
+                        />
+                        R. Maria Martins Batista, 1059 - Vila Sonia
+                    </p>
+                    <p>
+                        <img
+                            src="../imgs/whatsapp.svg"
+                            alt="Whatsapp"
+                            width="24"
+                        />
+                        (13) 97828-3454
+                    </p>
+                    <p>
+                        <img
+                            src="../imgs/instagram.svg"
+                            alt="Instagram"
+                            width="24"
+                        />
+                        <a
+                            href="https://www.instagram.com/vilastenis"
+                            target="_blank"
+                            class="insta-loja"
+                            >@vilastenis</a
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    Site desenvolvido com ❤️ por
+                    <a
+                        href="https://www.instagram.com/julio_davii_/"
+                        class="meu-insta"
+                        target="_blank"
+                    >
+                        <img
+                            src="../imgs/instagram.svg"
+                            alt="Instagram"
+                            width="20"
+                        />
+                        @julio_davii_
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>

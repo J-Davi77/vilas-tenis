@@ -325,7 +325,10 @@ body:has(#detalhes-overlay.show) {
     font-size: 1.15rem;
     transition: 0.2s;
 }
-
+.sidebar-link.active{
+    background-color: var(--bg-link-active);
+    color: var(--green);
+}
 .sidebar-link:hover {
     background-color: var(--bg-link-active);
 }
@@ -399,6 +402,7 @@ h1 {
 
 .nav-link.active {
     background-color: var(--bg-link-active);
+    color: var(--green);
 }
 
 .nav-link img {
@@ -465,6 +469,7 @@ section {
 .section-group {
     color: var(--text-primary);
     text-align: center;
+    justify-items: center;
 }
 
 .section-group.animated {
@@ -483,7 +488,7 @@ section {
 
 #tenis-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 

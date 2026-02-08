@@ -619,7 +619,8 @@ section {
 
 #tenis-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
     gap: 1.5rem;
 }
 

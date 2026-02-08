@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Veja o nosso catálogo dos melhores e mais baratos tênis da Praia Grande."
+        />
+        <title>Vila's Tênis</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" type="module" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div id="detalhes-overlay">
+            <button id="voltar-btn">
+                <img src="../imgs/seta.svg" alt="Seta" />
+                Voltar
+            </button>
+
+            <div id="detalhes">
+                <div id="first-column" class="detalhes-column">
+                    <div id="detalhes-img-container">
+                        <img
+                            id="detalhes-img-tenis"
+                            src="../imgs/tenis/img-1.jpeg"
+                        />
+                    </div>
+                </div>
+
+                <div id="second-column" class="detalhes-column">
+                    <div id="detalhes-categorias">Casual / Clássicos</div>
+
+                    <div id="nome-cor-container" class="detalhes-section">
+                        <h2 id="nome-tenis">Nike Air Force 1</h2>
+                        <span id="colorway">Triple White</span>
+                        <div class="preco">R$299,99</div>
+                    </div>
+
+                    <div id="desc-container" class="detalhes-section">
+                        <h3 class="detalhes-section-title">Descrição</h3>
+                        <p class="short-desc" id="tenis-desc">
+                            O Nike Air Force 1 é um tênis icônico que combina
+                            estilo urbano com conforto duradouro. Lançado
+                            originalmente para o basquete, ele conquistou as
+                            ruas e a moda casual.
+                        </p>
+                    </div>
+
+                    <div id="size-section" class="detalhes-section">
+                        <h3 class="detalhes-section-title">
+                            Tamanhos disponíveis
+                        </h3>
+
+                        <div id="sizes">
+                            <div class="size">35</div>
+                            <div class="size">36</div>
+                            <div class="size">37</div>
+                            <div class="size">38</div>
+                            <div class="size">39</div>
+                            <div class="size">40</div>
+                            <div class="size">41</div>
+                            <div class="size">42</div>
+                            <div class="size">43</div>
+                        </div>
+                    </div>
+
+                    <div id="buy-section" class="detalhes-section">
+                        <h3
+                            id="buy-section-title"
+                            class="detalhes-section-title"
+                        >
+                            Gostou do tênis? Converse sobre a compra no
+                            <span class="text-green">Whatsapp</span>
+                        </h3>
+
+                        <a target="_blank" id="zap-btn">Falar no Zap</a>
+
+                        <p class="short-desc">
+                            A retirada do tênis deverá ser feita em nossa loja
+                            física.
+                            <br />
+                            Discuta a forma de pagamento com nosso atendente no
+                            Whatsapp.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebar-overlay">
+            <div id="sidebar">
+                <button id="sidebar-close-btn">
+                    <img src="../imgs/close.svg" alt="Botão de fechar" />
+                </button>
+                <h2 id="nav-title">Navegação</h2>
+                <nav id="sidebar-nav">
+                    <a href="../casuais/index.html" class="sidebar-link">
+                        Casual
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/casual.svg"
+                            alt="Tênis casual"
+                        />
+                    </a>
+                    <a href="#" class="sidebar-link active">
+                        Esportivo
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/sports.svg"
+                            alt="Tênis esportivo"
+                        />
+                    </a>
+                    <a href="../chuteiras/index.html" class="sidebar-link">
+                        Chuteira
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/chuteira.svg"
+                            alt="Chuteira"
+                        />
+                    </a>
+                    <a href="../ajuda/index.html" class="sidebar-link">
+                        Ajuda
+                        <img
+                            class="sidebar-link-img"
+                            src="../imgs/ajuda.svg"
+                            alt="Símbolo de ajuda"
+                        />
+                    </a>
+                </nav>
+
+                <div id="nome-loja-sidebar">
+                    <h1>VILA'S TÊNIS</h1>
+                    <a
+                        href="https://www.instagram.com/vilastenis"
+                        target="_blank"
+                        class="insta-loja"
+                        >@vilastenis</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <a href="../index.html" id="inicio"><h1 id="nome-loja">VILA'S TÊNIS</h1></a>
+
+            <nav id="site-nav">
+                <a href="../casuais/index.html" class="nav-link">
+                    <img src="../imgs/casual.svg" alt="Tênis casual" />
+                    <span>Casual</span>
+                </a>
+                <a href="../esportivos/index.html" class="nav-link active">
+                    <img src="../imgs/sports.svg" alt="Tênis esportivo" />
+                    <span>Esportivo</span>
+                </a>
+                <a href="../chuteiras/index.html" class="nav-link">
+                    <img src="../imgs/chuteira.svg" alt="Chuteira" />
+                    <span>Chuteira</span>
+                </a>
+                <a href="../ajuda/index.html" class="nav-link">
+                    <img src="../imgs/ajuda.svg" alt="Contato" />
+                    <span>Ajuda</span>
+                </a>
+            </nav>
+            <button id="menu-btn">
+                <img src="../imgs/menu.svg" alt="Menu" />
+            </button>
+        </header>
+
+        <main>
+            <section id="catalogo">
+                <div class="section-group animated">
+                    <h2 class="section-title">Esportivos</h2>
+                    <p class="section-subtitle">
+                        Aposte na união entre inovação e estilo e sinta a diferença em cada passo!
+                    </p>
+                </div>
+
+                <!-- Grid dos tênis -->
+                <div id="tenis-container"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2 class="footer-logo">VILA'S TÊNIS</h2>
+                    <p class="footer-desc">Seu estilo começa nos pés.</p>
+                </div>
+
+                <nav class="footer-links">
+                    <h3 class="footer-title">Links rápidos</h3>
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="#catalogo">Catálogo Inicial</a></li>
+                        <li><a href="../casuais/index.html">Casual</a></li>
+                        <li><a href="#">Esportivo</a></li>
+                        <li><a href="../chuteiras/index.html">Chuteiras</a></li>
+                        <li><a href="../ajuda/index.html">Ajuda</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <p>
+                        <img
+                            src="../imgs/local.svg"
+                            alt="localização"
+                            width="24"
+                        />
+                        R. Maria Martins Batista, 1059 - Vila Sonia
+                    </p>
+                    <p>
+                        <img
+                            src="../imgs/whatsapp.svg"
+                            alt="Whatsapp"
+                            width="24"
+                        />
+                        (13) 97828-3454
+                    </p>
+                    <p>
+                        <img
+                            src="../imgs/instagram.svg"
+                            alt="Instagram"
+                            width="24"
+                        />
+                        <a
+                            href="https://www.instagram.com/vilastenis"
+                            target="_blank"
+                            class="insta-loja"
+                            >@vilastenis</a
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    Site desenvolvido com ❤️ por
+                    <a
+                        href="https://www.instagram.com/julio_davii_/"
+                        class="meu-insta"
+                        target="_blank"
+                    >
+                        <img
+                            src="../imgs/instagram.svg"
+                            alt="Instagram"
+                            width="20"
+                        />
+                        @julio_davii_
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

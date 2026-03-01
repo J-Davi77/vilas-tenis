@@ -494,6 +494,7 @@ section {
 
 .tenis-card {
     background-color: var(--bg-black-2);
+    height: 580px;
     padding: 1.2rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -535,9 +536,17 @@ section {
     padding: 0.15rem 0.4rem;
 }
 
+.content {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 .nome {
     color: var(--text-primary);
-    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 1.3rem);
 }
 
 .colorway {
@@ -562,14 +571,9 @@ section {
     font-family: Poppins, sans-serif;
 }
 
-.btn-container {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
 
 .tenis-card .detalhes-btn.primary {
+    width: 100%;
     margin-top: auto;
 }
 

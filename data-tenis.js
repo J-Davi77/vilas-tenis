@@ -17,7 +17,7 @@ export const tenisArr = [
         marca: "Nike",
         modelo: "Air Force 1",
         nome: "Nike Air Force 1",
-        colorway: "Triple White",
+        colorway: "Branco",
         preco: 90.0,
         desc: `O Nike Air Force 1 é um tênis icônico que combina estilo urbano com conforto duradouro. Lançado originalmente para o basquete, ele conquistou as ruas e a moda casual.`,
         categorias: ["Casual", "Clássico"],

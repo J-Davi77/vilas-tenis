@@ -15,7 +15,7 @@ export function renderTenis(arr) {
                 <div class="tenis-img-container">
                 <img
                     class="tenis-img"
-                    src="../imgs/tenis/img-${tenis.id}.jpeg"
+                    src="/vila's-tenis/imgs/tenis/img-${tenis.id}.jpeg"
                     alt="${tenis.nome}"
                     loading="lazy"
                 />

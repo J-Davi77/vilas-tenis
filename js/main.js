@@ -15,7 +15,7 @@ export function renderTenis(arr) {
                 <div class="tenis-img-container">
                 <img
                     class="tenis-img"
-                    src="/vila's-tenis/imgs/tenis/img-${tenis.id}.jpeg"
+                    src="/vilas-tenis/imgs/tenis/img-${tenis.id}.jpeg"
                     alt="${tenis.nome}"
                     loading="lazy"
                 />
@@ -92,7 +92,7 @@ function verDetalhes(id) {
     const url = getZapLink(tenis.nome);
 
     detalhesOverlay.querySelector("#detalhes-img-tenis").src =
-        `../imgs/tenis/img-${id}.jpeg`;
+        `/vilas-tenis/imgs/tenis/img-${id}.jpeg`;
 
     detalhesOverlay.querySelector("#detalhes-categorias").innerText =
         tenis.categorias.join(" / ");

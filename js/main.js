@@ -92,7 +92,7 @@ function verDetalhes(id) {
     const url = getZapLink(tenis.nome);
 
     detalhesOverlay.querySelector("#detalhes-img-tenis").src =
-        `imgs/tenis/img-${id}.jpeg`;
+        `../imgs/tenis/img-${id}.jpeg`;
 
     detalhesOverlay.querySelector("#detalhes-categorias").innerText =
         tenis.categorias.join(" / ");
@@ -120,7 +120,7 @@ window.addEventListener("DOMContentLoaded", () => {
     detalhesBtns.forEach((btn) => {
         const id = btn.closest(".tenis-card").id;
         btn.addEventListener("click", () => {
-            
+            verDetalhes(id);
         });
     });
 });

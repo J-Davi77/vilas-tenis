@@ -1,6 +1,7 @@
-// Copia só pra fazer mais rápido com os outros tênis
-const modeloTenis = {
-    id: 5,
+/*
+Modelo dos objetos dos tênis
+{
+    id: ,
     marca: "",
     modelo: "",
     nome: "",
@@ -9,7 +10,9 @@ const modeloTenis = {
     desc: "",
     categorias: ["", ""],
     tamanhos: [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
-};
+},
+
+*/
 
 export const tenisArr = [
     {
@@ -54,6 +57,39 @@ export const tenisArr = [
         preco: 147.0,
         desc: `O Adidas Campus é um clássico atemporal que une estilo retrô e versatilidade. Com cabedal em camurça macia, ele oferece conforto e acabamento premium, enquanto as icônicas três listras laterais reforçam a identidade da marca. A entressola proporciona leve amortecimento para o dia a dia, e o solado de borracha garante boa aderência e durabilidade. Ideal para compor looks casuais e streetwear com autenticidade.`,
         categorias: ["Casual", "Clássico"],
+        tamanhos: [38, 39, 40, 41, 42, 43],
+    },
+    {
+        id: 5,
+        marca: "Vans",
+        modelo: "Knu Skool",
+        nome: "Vans Knu Skool",
+        colorway: "Preto/Branco",
+        preco: 130,
+        desc: "O Vans KNU Skool é um tênis inspirado no estilo skate dos anos 90, com design mais “gordinho” (oversized), língua e colarinho bem acolchoados e a clássica faixa lateral (Sidestripe) em versão mais destacada. Ele combina visual retrô com conforto e resistência, sendo muito usado no estilo urbano e casual.",
+        categorias: ["Casual", "Clássico"],
+        tamanhos: [34, 35, 36, 37, 38, 39],
+    },
+    {
+        id: 6,
+        marca: "Nike",
+        modelo: "Air Max 270",
+        nome: "Nike Air Max 270",
+        colorway: "Branco/Preto/Azul/Vermelho/Amarelo",
+        preco: 140,
+        desc: "O Nike Air Max 270 é um tênis casual com foco em conforto, conhecido pela sua grande unidade de amortecimento Air no calcanhar, que proporciona pisada macia e absorção de impacto no dia a dia. Inspirado em modelos clássicos da linha Air Max, ele tem design moderno, construção leve e parte superior respirável que se ajusta ao pé como uma meia.",
+        categorias: ["Casual", "Lifestyle"],
+        tamanhos: [38, 39, 40, 41, 42, 43],
+    },
+    {
+        id: 7,
+        marca: "Nike",
+        modelo: "Air Jordan 4",
+        nome: "Nike Air Jordan 4",
+        colorway: "Preto/Branco/Cinza",
+        preco: 170,
+        desc: "O Air Jordan 4 é um tênis icônico lançado em 1989, conhecido pelo design marcante com painéis em mesh, suporte lateral com “wings” e estrutura robusta. Ele oferece bom amortecimento com unidade Air no solado e combina durabilidade com conforto. Apesar de ter origem no basquete, hoje é muito valorizado no lifestyle e no streetwear pelo seu visual clássico e histórico na cultura sneaker.",
+        categorias: ["Casual", "Lifestyle"],
         tamanhos: [38, 39, 40, 41, 42, 43],
     },
 ];

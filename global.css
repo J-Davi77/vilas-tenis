@@ -517,6 +517,7 @@ section {
     height: 250px;
     border-radius: 12px;
     object-fit: cover;
+    color: white;
 }
 
 .categorias {

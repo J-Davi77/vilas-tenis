@@ -325,7 +325,7 @@ body:has(#detalhes-overlay.show) {
     font-size: 1.15rem;
     transition: 0.2s;
 }
-.sidebar-link.active{
+.sidebar-link.active {
     background-color: var(--bg-link-active);
     color: var(--green);
 }
@@ -544,7 +544,6 @@ section {
     justify-content: space-between;
 }
 
-
 .nome {
     color: var(--text-primary);
     font-size: clamp(1rem, 3vw, 1.3rem);
@@ -572,7 +571,6 @@ section {
     font-family: Poppins, sans-serif;
 }
 
-
 .tenis-card .detalhes-btn.primary {
     width: 100%;
     margin-top: auto;
@@ -599,11 +597,6 @@ section {
 
 .primary:hover {
     background: var(--green-darker);
-}
-
-.favorito .secondary:hover,
-.secondary:hover {
-    background: var(--green);
 }
 
 .animated {
